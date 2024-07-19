@@ -29,3 +29,4 @@ def delete_student_endpoint(student_id: str):
     if delete_student(student_id):
         return {"status": "Student deleted successfully"}
     raise HTTPException(status_code=404, detail="Student not found")
+
